@@ -12,13 +12,12 @@ void setup() {
 }
 
 void draw() {
-    background(255); // Clear the background
-
+    background(255);
+    
     // Update and display the ghost
     ghost.update(); // Update ghost position based on mouse
     ghost.show(); // Draw the ghost
 
-    // Move and show each bacteria
     for (int i = 0; i < bacteria.length; i++) {
         if (bacteria[i] != null) {
             bacteria[i].move(); // Move the bacteria
@@ -92,7 +91,7 @@ class Bacteria {
         fill(0); // Set color to black for the eye
         float eyeX = x + pacmanSize * 0.7; // Adjust position of the eye
         float eyeY = y - pacmanSize * 0.2; // Adjust position of the eye
-        ellipse(eyeX, eyeY, 2, 2); // Draw the eye
+        ellipse(eyeX-9, eyeY, 1, 1); // Draw the eye
     }
 
     // Check if the bacteria can reproduce
@@ -110,8 +109,8 @@ class Ghost {
     float x, y; // Position of the ghost
 
     Ghost() {
-        x = width / 2; // Start in the center (optional)
-        y = height / 2; // Start in the center (optional)
+        x = width / 2; // Start in the center
+        y = height / 2;
     }
 
     // Method to update ghost position based on mouse
