@@ -12,12 +12,13 @@ void setup() {
 }
 
 void draw() {
-    background(255);
-    
+    background(255); // Clear the background
+
     // Update and display the ghost
     ghost.update(); // Update ghost position based on mouse
     ghost.show(); // Draw the ghost
 
+    // Move and show each bacteria
     for (int i = 0; i < bacteria.length; i++) {
         if (bacteria[i] != null) {
             bacteria[i].move(); // Move the bacteria
