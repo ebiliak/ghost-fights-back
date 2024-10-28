@@ -1,5 +1,5 @@
 Bacteria[] bacteria;
-int numBacteria = 1000; 
+int numBacteria = 500; 
 Ghost ghost; 
 
 void setup() {
@@ -83,7 +83,7 @@ class Bacteria {
     void show() {
         fill(c);
     
-        float pacmanSize = 10; 
+        float pacmanSize = 20; 
         float startAngle = radians(45); 
         float stopAngle = radians(315); 
         arc(x, y, pacmanSize, pacmanSize, startAngle, stopAngle);
