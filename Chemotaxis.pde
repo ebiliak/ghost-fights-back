@@ -86,7 +86,7 @@ class Bacteria {
         float pacmanSize = 10; 
         float startAngle = radians(45); 
         float stopAngle = radians(315); 
-        arc(x, y, pacmanSize, pacmanSize, startAngle, stopAngle, PIE);
+        arc(x, y, pacmanSize, pacmanSize, startAngle, stopAngle);
         
         fill(0);
         float eyeX = x + pacmanSize * 0.7;
